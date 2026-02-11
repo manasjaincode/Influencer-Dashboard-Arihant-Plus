@@ -58,9 +58,27 @@ Access to pre-approved Arihant Capital banners, educational videos, and branding
 ## 📂 Project Structure
 
 ```text
+INFLUENCER ARIHANT PLUS
+├── public/                # Static assets (vite.svg, etc.)
 ├── src/
-│   ├── components/     # High-performance UI components (Earnings cards, Lead tables)
-│   ├── services/       # API services for Arihant back-office integration
-│   ├── assets/         # Influencer marketing kits and brand guidelines
-│   └── utils/          # Logic for reward and commission calculation
-└── README.md
+│   ├── assets/           # Images, icons aur global styles
+│   ├── components/       # Reusable UI components
+│   │   ├── Landing Page/ # ArihantLanding, FAQ, Testimonials, CTA, etc.
+│   │   ├── realtime/    # Real-time data tracking components
+│   │   ├── Earnings.jsx  # Earnings tracking module
+│   │   ├── ReferClient.jsx # Client referral interface
+│   │   ├── TrackStatus.jsx # Status tracking dashboard
+│   │   └── Sidebar.jsx   # Navigation sidebar
+│   ├── Pages/            # Main application views
+│   │   ├── Dashboard.jsx # Influencer main dashboard
+│   │   ├── Login.jsx     # Secure authentication page
+│   │   └── MainLayout.jsx # Application layout wrapper
+│   ├── shared/           # Global Header aur Footer components
+│   ├── lib/              # Utility functions aur API configurations
+│   ├── App.jsx           # Root component (Routing & Context Providers)
+│   ├── main.jsx          # Entry point (Vite/React)
+│   └── index.css         # Tailwind global styles
+├── .env                  # Configuration variables (API keys, etc.)
+├── tailwind.config.js    # Tailwind CSS configurations
+├── vite.config.js        # Vite build configurations
+└── package.json          # Dependencies aur scripts
